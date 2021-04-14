@@ -1,0 +1,35 @@
+main {
+    padding: 50px 10px
+}
+
+.logo-jd{
+    height: 100px;
+    width: auto;
+}
+
+.link-current,
+.footer-link {
+    color: black;
+}
+
+.nav-horizontal-spacer{
+    width: 20px;
+    background-color: gray;
+    display: inline-block;
+}
+
+.container-nav{
+    margin: 30px 0px
+}
+
+.container-project{
+    margin: 10px 0px
+}
+
+.container-project-spacer{
+    width: 10px;
+}
+
+.container-footer {
+    margin-top: 200px;
+}

@@ -1,0 +1,27 @@
+<div class="col s12 center-align container-footer">
+
+    <a href="/" class="footer-link">
+        Home
+    </a>
+    <span class="spacer">|</span>
+
+    <% for(var index in appstoreProjects) { %>
+        <a href=<%=appstoreProjects[index].link %> class="footer-link">
+            <%=appstoreProjects[index].name %>
+        </a>
+
+        <span class="spacer">|</span>
+        <% } %>
+
+            <% for(var index in personalProjects) { %>
+                <a href=<%=personalProjects[index].link %> class="footer-link">
+                    <%=personalProjects[index].name %>
+                </a>
+
+                <span class="spacer">|</span>
+                <% } %>
+
+                    <a href="/contact" class="footer-link">
+                        Contact
+                    </a>
+</div>
