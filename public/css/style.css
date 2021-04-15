@@ -30,16 +30,29 @@ main {
     width: 10px;
 }
 
-.container-footer {
-    margin-top: 200px;
-}
-
-.container-personal-projects{
-    margin-bottom: 50px
-}
 
 .hidden {
     display: none;
+}
+
+.container-social{
+    margin-top:100px;
+    margin-bottom:75px;
+}
+
+.more-projects{
+    margin: 0 .75rem !important;
+    background-color: black !important;
+}
+
+.more-projects-text {
+    color: white
+}
+
+.fab{
+    font-size: 2rem !important;
+    color: darkgray;
+    margin: 0 1rem
 }
 
 .normal-link,
@@ -51,4 +64,15 @@ main {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
