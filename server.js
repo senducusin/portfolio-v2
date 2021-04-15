@@ -1,7 +1,11 @@
 
 const express = require("express")
 const path = require("path")
-var fs = require('fs');
+const fs = require('fs');
+const nodemailer = require('nodemailer');
+const dotenv = require("dotenv")
+
+dotenv.config()
 
 const app = express()
 
@@ -36,6 +40,11 @@ const personalProjects = [
 
 const appstoreProjects = [
     {
+        name: "Wave",
+        imageLink: "/public/assets/appstore-projects/wave.png",
+        link: "https://apps.apple.com/us/app/id1510087486"
+    },
+    {
         name: "A.I.M.S.",
         imageLink: "/public/assets/appstore-projects/AIMS.png",
         link: "https://apps.apple.com/us/app/id1496339487"
@@ -47,33 +56,98 @@ const appstoreProjects = [
     }
 ]
 
+const projects = {
+    personalProjects: personalProjects,
+    appstoreProjects: appstoreProjects
+}
+
+var transporter = nodemailer.createTransport({
+    service: 'yahoo',
+    host: 'smtp.mail.yahoo.com',
+    port: 465,
+    secure: false,
+    auth: {
+        user: process.env.BOT_EMAIL,
+        pass: process.env.BOT_PASSWORD
+    },
+    debug: false,
+    logger: true
+});
+
 app.get("/", (req, res) => {
 
     const pageProperties = {
         nav: {
-            projects: "link-current",
-            contact: "normal-link"
+            projects: {
+                css: "link-current",
+                href: ""
+            },
+            contact: {
+                css: "normal-link",
+                href: "/contact"
+            }
         },
-        personalProjects: personalProjects,
-        appstoreProjects: appstoreProjects
+        projects
     }
 
     res.render("index", pageProperties)
-})
+});
 
 app.get("/contact", (req, res) => {
 
     const pageProperties = {
         nav: {
-            projects: "normal-link",
-            contact: "link-current",
+            projects: {
+                css: "normal-link",
+                href: "/"
+            },
+            contact: {
+                css: "link-current",
+                href: ""
+            }
         },
-        personalProjects: personalProjects,
-        appstoreProjects: appstoreProjects
+        projects
     }
 
     res.render("contact", pageProperties)
-})
+});
+
+app.get('/download', function (req, res) {
+    const file = path.join(__dirname, "public/downloadables/Jansen_Ducusin_CV.pdf")
+    res.download(file);
+});
+
+app.post('/send', function (req, res) {
+    const body = req.body
+
+    if (body.hasOwnProperty("first_name") &&
+        body.hasOwnProperty("last_name") &&
+        body.hasOwnProperty("message") &&
+        body.hasOwnProperty("email")
+    ) {
+        console.log(body)
+
+        var mailOptions = {
+            from: process.env.BOT_EMAIL,
+            to: process.env.BOT_EMAILRECEIVER,
+            subject: `Portfolio Email from ${body.first_name} ${body.last_name}`,
+            text: body.message
+        };
+
+        transporter.sendMail(mailOptions, function (error, info) {
+            if (error) {
+                console.log(error)
+                res.status(200).send({
+                    status: "error"
+                })
+            } else {
+                res.status(200).send({
+                    status: "ok"
+                })
+            }
+        });
+    }
+});
 
 const port = process.env.PORT || 3000
 app.listen(port, () => console.log(`Listening on port ${port}...`))

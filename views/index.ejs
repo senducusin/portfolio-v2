@@ -10,12 +10,12 @@
 
                 <div class="container-personal-projects s12 col">
                     <h5>App Store Projects</h5>
-                    <% for(var index in appstoreProjects) { %>
+                    <% for(var index in projects.appstoreProjects) { %>
                         <div class="col l3 m6 s12">
                             <div class="container-project center-align project-end">
-                                <a href=<%=appstoreProjects[index].link %>>
-                                    <img class="responsive-img" src=<%=appstoreProjects[index].imageLink%>
-                                    alt=<%=appstoreProjects[index].name %>>
+                                <a href=<%=projects.appstoreProjects[index].link %>>
+                                    <img class="responsive-img" src=<%=projects.appstoreProjects[index].imageLink%>
+                                    alt=<%=projects.appstoreProjects[index].name %>>
                                 </a>
                             </div>
                         </div>
@@ -24,12 +24,12 @@
 
                 <div class="container-personal-projects s12 col">
                     <h5>Personal Projects</h5>
-                    <% for(var index in personalProjects) { %>
+                    <% for(var index in projects.personalProjects) { %>
                         <div class="col l3 m6 s12">
                             <div class="container-project center-align project-end">
-                                <a href=<%=personalProjects[index].link %>>
-                                    <img class="responsive-img" src=<%=personalProjects[index].imageLink%>
-                                    alt=<%=personalProjects[index].name %>>
+                                <a href=<%=projects.personalProjects[index].link %>>
+                                    <img class="responsive-img" src=<%=projects.personalProjects[index].imageLink%>
+                                    alt=<%=projects.personalProjects[index].name %>>
                                 </a>
                             </div>
                         </div>

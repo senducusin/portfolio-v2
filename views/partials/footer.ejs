@@ -5,17 +5,17 @@
     </a>
     <span class="spacer">|</span>
 
-    <% for(var index in appstoreProjects) { %>
-        <a href=<%=appstoreProjects[index].link %> class="footer-link">
-            <%=appstoreProjects[index].name %>
+    <% for(var index in projects.appstoreProjects) { %>
+        <a href=<%=projects.appstoreProjects[index].link %> class="footer-link">
+            <%=projects.appstoreProjects[index].name %>
         </a>
 
         <span class="spacer">|</span>
         <% } %>
 
-            <% for(var index in personalProjects) { %>
-                <a href=<%=personalProjects[index].link %> class="footer-link">
-                    <%=personalProjects[index].name %>
+            <% for(var index in projects.personalProjects) { %>
+                <a href=<%=projects.personalProjects[index].link %> class="footer-link">
+                    <%=projects.personalProjects[index].name %>
                 </a>
 
                 <span class="spacer">|</span>

@@ -4,7 +4,16 @@
 
 <div class="col s12 container-nav center-align">
 
-    <a class=<%=nav.projects%> href="/">PROJECTS</a>
+    <a class=<%=nav.projects.css%>
+        <%= nav.projects.href.length==0 ? " " : `href=${nav.projects.href}`%>>
+            PROJECTS
+    </a>
+
     <span class="nav-horizontal-spacer"></span>
-    <a class=<%=nav.contact%> href="/contact">CONTACT</a>
+
+    <a class=<%=nav.contact.css%>
+        <%= nav.contact.href.length==0 ? " " : `href=${nav.contact.href}` %>
+            >
+            CONTACT
+    </a>
 </div>

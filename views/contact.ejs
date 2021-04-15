@@ -5,11 +5,70 @@
     <body>
         <main class="row">
             <%- include('partials/header.ejs') %>
-                <div>body</div>
+                <div class="container-personal-projects s12 col center-align">
+
+                    <img class="responsive-img" src="/public/assets/image.png" alt="Jansen Ducusin">
+
+                    <h3>Let's work together</h2>
+                        <p>Professional iOS Developer currently living in La Union, Philippines. Highly experienced in
+                            developing iOS mobile appications using Swift and Objective-C.</p>
+                        <p><a href="/download">Click here</a> to download my CV</p>
+                </div>
+
+                <form class="container-form container">
+                    <div class="row hidden" id="preloader">
+                        <div class="col s12">
+
+                            <div class="progress">
+                                <div class="indeterminate"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+
+                            <button id="submit" class="btn waves-effect waves-light disabled" type="button"
+                                name="action">Send
+                                <i class="material-icons right">send</i>
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                </form>
+
                 <%- include('partials/footer.ejs') %>
         </main>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="/public/scripts/script.js"></script>
     </body>
 
 </html>
