@@ -43,6 +43,7 @@ main {
 .more-projects{
     margin: 0 .75rem !important;
     background-color: black !important;
+    float: none !important;
 }
 
 .more-projects-text {
