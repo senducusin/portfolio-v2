@@ -22,9 +22,19 @@ const personalProjects = [
         link: "https://bitbucket.org/senducusin/cool-chat/src/main/"
     },
     {
-        name: "Map Kit App",
-        imageLink: "/public/assets/personal-projects/map-kit-app.png",
-        link: "https://bitbucket.org/senducusin/map-kit-app/src/main/"
+        name: "Seatmates",
+        imageLink: "/public/assets/personal-projects/seatmates.png",
+        link: "https://bitbucket.org/senducusin/seatmates/src/main/"
+    },
+    {
+        name: "TTC Routes",
+        imageLink: "/public/assets/personal-projects/toronto-transit-commission.png",
+        link: "https://bitbucket.org/senducusin/ttc-routes/src/main/"
+    },
+    {
+        name: "Papanam",
+        imageLink: "/public/assets/personal-projects/papanam.png",
+        link: "https://bitbucket.org/senducusin/papanam/src/main/"
     },
     {
         name: "App News v2",
@@ -32,9 +42,9 @@ const personalProjects = [
         link: "https://bitbucket.org/senducusin/news-app-v2/src/main/"
     },
     {
-        name: "TTC Routes",
-        imageLink: "/public/assets/personal-projects/toronto-transit-commission.png",
-        link: "https://bitbucket.org/senducusin/ttc-routes/src/main/"
+        name: "Map Kit App",
+        imageLink: "/public/assets/personal-projects/map-kit-app.png",
+        link: "https://bitbucket.org/senducusin/map-kit-app/src/main/"
     }
 ]
 
