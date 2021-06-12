@@ -19,32 +19,32 @@ const personalProjects = [
     {
         name: "Cool Chat",
         imageLink: "/public/assets/personal-projects/cool-chat.png",
-        link: "https://bitbucket.org/senducusin/cool-chat/src/main/"
+        link: "https://github.com/senducusin/cool-chat"
     },
     {
         name: "Seatmates",
         imageLink: "/public/assets/personal-projects/seatmates.png",
-        link: "https://bitbucket.org/senducusin/seatmates/src/main/"
+        link: "https://github.com/senducusin/seatmates"
     },
     {
         name: "TTC Routes",
         imageLink: "/public/assets/personal-projects/toronto-transit-commission.png",
-        link: "https://bitbucket.org/senducusin/ttc-routes/src/main/"
+        link: "https://github.com/senducusin/ttc-routes"
     },
     {
         name: "Papanam",
         imageLink: "/public/assets/personal-projects/papanam.png",
-        link: "https://bitbucket.org/senducusin/papanam/src/main/"
+        link: "https://github.com/senducusin/papanam"
     },
     {
         name: "App News v2",
         imageLink: "/public/assets/personal-projects/news-app-v2.png",
-        link: "https://bitbucket.org/senducusin/news-app-v2/src/main/"
+        link: "https://github.com/senducusin/news-app"
     },
     {
         name: "Map Kit App",
         imageLink: "/public/assets/personal-projects/map-kit-app.png",
-        link: "https://bitbucket.org/senducusin/map-kit-app/src/main/"
+        link: "https://github.com/senducusin/map-app"
     }
 ]
 
