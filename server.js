@@ -1,5 +1,6 @@
 
 const express = require("express")
+const compression = require('compression');
 const path = require("path")
 const fs = require('fs');
 const nodemailer = require('nodemailer');
@@ -11,6 +12,7 @@ const app = express()
 
 app.use("/public", express.static("public"))
 app.use(express.json())
+app.use(compression())
 
 app.set("views", path.join(__dirname, "views"))
 app.set("view engine", "ejs")
