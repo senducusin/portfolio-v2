@@ -52,19 +52,39 @@ const personalProjects = [
 
 const appstoreProjects = [
     {
-        name: "Wave",
+        name: "Wave: Enterprise Inventory",
         imageLink: "/public/assets/appstore-projects/wave.png",
         link: "https://apps.apple.com/us/app/id1510087486"
     },
     {
         name: "A.I.M.S.",
-        imageLink: "/public/assets/appstore-projects/AIMS.png",
+        imageLink: "/public/assets/appstore-projects/aims.png",
         link: "https://apps.apple.com/us/app/id1496339487"
     },
     {
-        name: "D.O.D. Nox",
+        name: "Simply RFID: Nox",
         imageLink: "/public/assets/appstore-projects/nox.png",
         link: "https://apps.apple.com/us/app/id1499461156"
+    },
+    {
+        name: "My PC mobile (Prepaid)",
+        imageLink: "/public/assets/appstore-projects/mpm.png",
+        link: "https://apps.apple.com/ca/app/my-pc-mobile-prepaid/id1439611408"
+    },
+    {
+        name: "MyBell",
+        imageLink: "/public/assets/appstore-projects/mb.png",
+        link: "https://apps.apple.com/ca/app/mybell/id850549838"
+    },
+    {
+        name: "Virgin Plus My Account",
+        imageLink: "/public/assets/appstore-projects/vp.png",
+        link: "https://apps.apple.com/ph/app/virgin-plus-my-account/id853116586"
+    },
+    {
+        name: "Lucky Mobile My Account",
+        imageLink: "/public/assets/appstore-projects/lm.png",
+        link: "https://apps.apple.com/ca/app/lucky-mobile-my-account/id1459173378"
     }
 ]
 
