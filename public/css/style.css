@@ -89,7 +89,7 @@ main {
     position: relative;
 }
 
-.responsive-img {
+.app-image {
     opacity: 1;
     display: block;
     transition: .5s ease;
@@ -107,7 +107,7 @@ main {
     text-align: center;
 }
 
-.app-container:hover .responsive-img {
+.app-container:hover .app-image {
     opacity: 0.3;
 }
   
