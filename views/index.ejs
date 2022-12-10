@@ -9,30 +9,34 @@
             <%- include('partials/header.ejs') %>
 
                 <div class="container-personal-projects s12 col">
-                    <h5>App Store Projects</h5>
+                    <h5>iOS applications that I have supported</h5>
                     <% for(var index in projects.appstoreProjects) { %>
                         <div class="col l3 m6 s12">
-                            <div class="container-project center-align project-end">
-                                <a href=<%=projects.appstoreProjects[index].link %>>
-                                    <img class="responsive-img" src=<%=projects.appstoreProjects[index].imageLink%>
-                                    alt=<%=projects.appstoreProjects[index].name %>>
-                                </a>
+                            <div class="container-project center-align project-end app-container">
+                                <img class="responsive-img rounded-img-0" src=<%=projects.appstoreProjects[index].imageLink%>
+                                alt=<%=projects.appstoreProjects[index].name %>>
+                                <div class="middle">
+                                    <a href=<%=projects.appstoreProjects[index].link %>>
+                                        <div class="go-to-link">App Store Preview</div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <% } %>
-
-
                 </div>
 
                 <div class="container-personal-projects s12 col">
-                    <h5>Personal Projects</h5>
+                    <h5>My personal projects</h5>
                     <% for(var index in projects.personalProjects) { %>
                         <div class="col l3 m6 s12">
-                            <div class="container-project center-align project-end">
-                                <a href=<%=projects.personalProjects[index].link %>>
-                                    <img class="responsive-img" src=<%=projects.personalProjects[index].imageLink%>
+                            <div class="container-project center-align project-end app-container">
+                                    <img class="responsive-img rounded-img-1" src=<%=projects.personalProjects[index].imageLink%>
                                     alt=<%=projects.personalProjects[index].name %>>
-                                </a>
+                                    <div class="middle">
+                                        <a href=<%=projects.personalProjects[index].link %>>
+                                            <div class="go-to-link">Repository</div>
+                                        </a>
+                                    </div>
                             </div>
                         </div>
                         <% } %>
