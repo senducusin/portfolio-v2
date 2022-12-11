@@ -47,6 +47,21 @@ const personalProjects = [
         name: "Map Kit App",
         imageLink: "/public/assets/personal-projects/map-kit-app.png",
         link: "https://github.com/senducusin/map-app"
+    },
+    {
+        name: "Job-Order Organizer",
+        imageLink: "/public/assets/personal-projects/organizer.png",
+        link: "https://github.com/senducusin/job-order-organizer-client"
+    },
+    {
+        name: "Solar Tracker",
+        imageLink: "/public/assets/personal-projects/solar.png",
+        link: "https://github.com/senducusin/solar-tracker-arduino"
+    },
+    {
+        name: "More Projects",
+        imageLink: "/public/assets/personal-projects/more.png",
+        link: "https://github.com/senducusin"
     }
 ]
 
