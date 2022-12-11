@@ -15,27 +15,10 @@
     <a href="/" class="footer-link">
         Home
     </a>
+
     <span class="spacer">|</span>
 
-    <% for(var index in projects.appstoreProjects) { %>
-        <a href=<%=projects.appstoreProjects[index].link %> class="footer-link">
-            <%=projects.appstoreProjects[index].name %>
-        </a>
-
-        <span class="spacer">|</span>
-        <% } %>
-
-            <% for(var index in projects.personalProjects) { %>
-                <a href=<%=projects.personalProjects[index].link %> class="footer-link">
-                    <%=projects.personalProjects[index].name %>
-                </a>
-
-                <span class="spacer">|</span>
-                <% } %>
-
-                    <a href="/contact" class="footer-link">
-                        Contact
-                    </a>
-
-
+    <a href="/contact" class="footer-link">
+        Contact
+    </a>
 </div>
